@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 header {
@@ -32,8 +33,9 @@ nav {
 
 .hero {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
     height: 300px;
     padding: 25px;
 }
@@ -49,8 +51,9 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
     max-width: 400px;
+    max-height: 300px;
+    min-width: 100px;
 }
 
 .hero-title, .summary {
@@ -58,8 +61,8 @@ nav {
 }
 
 .hero-image {
-    height: 250px;
-    width: auto;
+    width: 550px;
+    height: 275px;
 }
 
 button {
@@ -67,4 +70,99 @@ button {
     color: #F9FAF8;
     padding: 6px 16px;
     border-radius: 6px;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.information {
+    padding: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.info-image {
+    height: auto;
+    width: 160px;
+}
+
+img {
+    border-radius: 6px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 160px;
+    text-align: center;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 50px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+#quote-source {
+    font-size: 24px;
+    font-weight: 800;
+    align-self: flex-end;
+    margin-top: 5px;
+}
+
+.signup-section {
+    padding: 75px 200px;
+}
+
+.signup-section p {
+    margin: 0;
+    color: white;
+}
+
+.signup-section button {
+    border-style: solid;
+    border-color: white;
+}
+
+.signup-subsection {
+    background-color: #3882F6;
+    padding: 50px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.call-text {
+    font-weight: 800;
+}
+
+.signup-text {
+    font-weight: 100;
+}
+
+footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 40px 0px;
 }
